@@ -1,3 +1,54 @@
-<html> 
-    <head> 
-        
+function createNewSchool(){
+    alert("New School Clicked");
+}style>
+        /* CSS */
+        #joke-span {
+            color: blue;
+            font-size: 40px;
+        } 
+    </style>
+
+</head>
+<body>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div -->
+    <div>
+        <span id="joke-span">
+            [Placeholder: This is where I want the joke to display]
+        </span>
+        <br />
+        <span id="uni-span">
+            [Placeholder: This is where the university is displayed]
+        </span>
+
+    </div>
+    
+   
+
+    <!-- JavaScript Goes Here --> 
+    <script src="container.py"></script>
+
+    <button class="button is-info" onclick="get_category.container">Menu</button>
+
+    <script> 
+    
+    // JavaScript Object
+    // Key : Value
+    // 'joke' = key 
+    // 'This is a placeholder text' = value
+    var joke = {
+        "joke": "This is a placeholder text.",
+        "university": "Texas A&M University"
+    }
+
+    // https://www.w3schools.com/js/js_htmldom_document.asp
+    var joke_span = document.getElementById("joke-span")
+    var uni_span = document.getElementById("uni-span")
+
+    // joke['joke'] = "This is a placeholder text."
+    joke_span.textContent = joke['joke']
+    uni_span.textContent = joke['university']
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Mode button (switch between manual entry and google cloud entry)
+A button/menu that shows all the categories. maybe also displays the amount of items in it. (can send to another local website that  )
+add item / remove item button
+possibly show camera feed *lowest priority*
+text box display status information
