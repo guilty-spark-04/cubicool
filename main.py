@@ -5,12 +5,13 @@ from flask import Flask
 app = Flask(__name__)
 box = create_box()
 
-box[7].add_item("toothbrush","dental")
+add_item(box,"toothbrush","dental")
 
-
+remove_item(box,"toothbrush")
+add_item(box,"toothbrush","dental")
 @app.route("/")
 def home():
-    return str(get_categoryLocation(box,"dental"))
+    return str(get_itemlocation(box,"toothbrush"))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port = 80, host = '0.0.0.0')

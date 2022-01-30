@@ -20,9 +20,11 @@ class Container:
     def remove_item(self,item): #removes item from container
         if(item in self.items):
             self.num_items-=1
-            self.items.remove(item);
+            del self.items[item]
             if self.num_items == 0:
+                self.category = ""
                 self.status = "empty"
+                Container.capacity+=1
         return
 
     def get_category(self): #gets the category of the container

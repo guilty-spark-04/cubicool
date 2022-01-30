@@ -24,7 +24,7 @@ def does_itemexist(box,item):
     return False
 def does_categoryexist(box,category):
     for i in box:
-        if i.does_categoryexist(category):
+        if i.get_category() == category:
             return True
     return False
 def add_item(box, item, category):
@@ -39,10 +39,11 @@ def add_item(box, item, category):
             if i.get_status() == "empty":
                 i.add_item(item,category)
                 Container.capacity-=1
+                return
     return
 
 def remove_item(box,item):
     if does_itemexist(box,item):
-        box[get_itemlocation(box,item)-1].remove_item(box,item)
+        box[get_itemlocation(box,item)-1].remove_item(item)
     return
 
