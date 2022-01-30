@@ -67,7 +67,7 @@ body{
      text-align: center;
  }
  input[type="text2"]{
-     height:.6in
+     height:.6in;
      display:block;
      padding:.1in;
      margin-top:5px;
@@ -77,7 +77,7 @@ body{
      font-weight:600;
  }
  .search{
-     color:black;
+     color:white;
      background-color:#D0BB6C;
      padding:10px 20px;
     font-size:15px;
