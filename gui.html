@@ -1,54 +1,98 @@
-function createNewSchool(){
-    alert("New School Clicked");
-}style>
-        /* CSS */
-        #joke-span {
-            color: blue;
-            font-size: 40px;
-        } 
-    </style>
-
+<html>
+<head>
+    
 </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    body{
+        background-color: #181818;
+        text-decoration-color: white;
+        color:white;
+        font-family: 'Staatliches';
+        font-display: 'Staatliches';
+    }
+    @font-face{
+
+    }
+    #logo{
+       padding-top: none;
+    }
+    p{
+        padding-top:1in;
+        text-align: center;
+    }
+    .capacity{
+        height:45px;
+        width:50%;
+        align-content: center;
+        text-align: center;
+        background-color: rgb(168, 53, 149);
+        border-radius: 50%;
+        color:white;
+    }
+    progress{
+        align-content: center;
+        background-color: blue;
+    }
+    .button_change{
+        padding-top:4em;
+        text-align:center;
+        margin: auto;
+    }
+    .button{
+        width: 2in;
+        height:.4in;
+        border-radius: 3em;
+        border: none;
+        background-color: gray;
+    }
+    .button:hover{
+        background-color:rgb(56, 56, 56);
+    }
+    .pls{
+        padding-top: 2em;
+        align-content: center;
+        color:aquamarine;
+        text-align: center;
+    }
+    progress::-webkit-progress-value { 
+        background:lightgreen; 
+    }
+        
+</style>
 <body>
+    
+    <!--<marquee> 
+        <p>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p>
+    </marquee> -->
 
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div -->
-    <div>
-        <span id="joke-span">
-            [Placeholder Hi]
-        </span>
-        <br />
-        <span id="uni-span">
-            [Placeholder: This is where the university is displayed]
-        </span>
+    <p>
+            WELCOME TO CUBICOOL
+    </p>
 
-    </div>
+    <div id = logo style="text-align: center;">
+        <p class="aligncenter">
+            <img src="./CC-Logo-01.png" alt="TAMU" width = 350em height 350em>
+        </p>
+    </div
     
    
-
     <!-- JavaScript Goes Here --> 
     <script src="container.py"></script>
 
-    <button class="button is-info" onclick="get_category.container">Menu</button>
-
-    <script> 
+    <p class="button_change" style:"text-align=center;" >
+           <a href="display.html"><button class="button" onclick="get_category.container">Menu</button></a> 
+    </p>
     
-    // JavaScript Object
-    // Key : Value
-    // 'joke' = key 
-    // 'This is a placeholder text' = value
-    var joke = {
-        "joke": "This is a placeholder text.",
-        "university": "Texas A&M University"
-    }
 
-    // https://www.w3schools.com/js/js_htmldom_document.asp
-    var joke_span = document.getElementById("joke-span")
-    var uni_span = document.getElementById("uni-span")
+    <!-- change value with math @ value /////////////////////////////////// -->   
+    <div>
+        <p class= "pls">
+            <progress class="capacity" value="70" max="100" >80% </progress>
+        </p>
+        
+    </div>
 
-    // joke['joke'] = "This is a placeholder text."
-    joke_span.textContent = joke['joke']
-    uni_span.textContent = joke['university']
-
-    </script>
 </body>
 </html>

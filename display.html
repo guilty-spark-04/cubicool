@@ -1,0 +1,123 @@
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+   html{
+        margin:.7in;
+        background-color: #181818;
+        font-family: 'Staatliches', cursive;
+        font-kerning: 500px;
+   }
+    header{
+        margin-left:.5in;
+        margin-bottom:.25in;
+    }
+    body{
+        
+    }
+    table{
+        align-content:center;
+        text-align:center;
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 4.5in;
+    }
+    div{
+        text-align:center;
+        align-content: center;
+        background-color:none;
+    }
+    tr{
+        height:.5in;
+        background-color:#B4BFC5;
+    }
+    th{
+        height:.2in;
+        font-kerning: 1000px;
+    }
+    .data{
+        align-items: center;
+        align-content: center;
+        width:80%;
+    }
+    .title{
+        text-align: center;
+        size:20px;
+        font-weight: bold;
+        color:white;
+        background-color:#586C85;
+        padding-top:.25in;
+        height:.5in;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        font-kerning: 2000px;
+    }
+    form{
+        text-align: center;
+    }
+    .button{
+        border-radius:.5em;
+        text-align: center;
+    }
+    .search-bar{ 
+        background-color: none;
+        padding-bottom: .5in;
+        text-align: center;
+    }
+    footer{
+        display:-webkit-inline-box;
+        margin-top: .5in;
+        color: white;
+    }
+    p{
+        margin-right: .2in;
+    }
+   
+    
+</style>
+<header>
+        <a href="gui.html"><img src="./CC-Logo-01.png" 
+            alt="TAMU" width = 70em height 70em>
+        </a>
+</header>
+<body>
+            
+    
+    <form>   
+            <input type="text" placeholder=" Item Name...." name="action">   
+            <button type="submit">Search</button>   
+            <button class="open-button" onclick="openForm()">Add Item</button>
+            <button type="opt">Remove Item</button> 
+    </form>
+
+    <div #data>
+            <p class="title">Inventory</p>
+            <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Number of Items</th>
+                    </tr>
+                    <tr>
+                        <td rowspan = "1">Hillary</td>
+                        <td>Advanced Web</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>60</td>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="3">Total Average: 72.5</td>
+                    </tr>
+                    </table>
+    </div>
+    <footer>
+        <p>TAMU Hackathon 2022<br>
+        <p> Cubicool™<br>
+      </footer>
+</body>
+</html>
