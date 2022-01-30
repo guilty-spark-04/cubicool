@@ -1,31 +1,76 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+html{
+     margin:.7in;
+     background-color: #181818;
+     font-family: "Railway",sans-serif;
+     font-kerning: 500px;
 }
-body{
-    background:linear-gradient(to right, #3a7bd5, #3a6073);
-    font-family:"Raleway",sans-serif;
-    height:100vh;
-}
-.center{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%)
-}
-.center button{
-    padding:10px 20px;
-    font-size:15px;
-    font-weight:600;
-    color:#222;
-    background:#f5f5f5;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    border-radius: 5px;
-}
-.popup{
+ header{
+     margin-left:.5in;
+     margin-bottom:.25in;
+ }
+ table{
+     align-content:center;
+     text-align:center;
+     width:80%;
+     margin-left: auto;
+     margin-right: auto;
+     height: 4.5in;
+ }
+ div{
+     text-align:center;
+     align-content: center;
+     background-color:none;
+ }
+ tr{
+     height:.5in;
+     background-color:#B4BFC5;
+ }
+ th{
+     height:.2in;
+     font-kerning: 1000px;
+ }
+ .data{
+     align-items: center;
+     align-content: center;
+     width:80%;
+ }
+ .title{
+     text-align: center;
+     size:20px;
+     font-weight: bold;
+     color:white;
+     background-color:#586C85;
+     padding-top:.25in;
+     height:.5in;
+     width: 80%;
+     margin-right: auto;
+     margin-left: auto;
+     font-kerning: 2000px;
+ }
+ form{
+     text-align: center;
+ }
+ .button{
+     border-radius:.5em;
+     text-align: center;
+ }
+ .search-bar{ 
+     background-color: none;
+     padding-bottom: .5in;
+     text-align: center;
+ }
+ footer{
+     display:-webkit-inline-box;
+     margin-top: .5in;
+     color: white;
+ }
+ p{
+     margin-right: .2in;
+ }
+
+
+ .popup{
     position:absolute;
     top:-150%;
     left:50%;
