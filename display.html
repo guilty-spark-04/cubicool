@@ -1,67 +1,94 @@
 <html>
 
-<header>
+<head>
         <a href="gui.html"><img src="./CC-Logo-01.png" 
             alt="TAMU" width = 70em height 70em>
         </a>
         <link rel="stylesheet" href="style.css">
-</header>
+</head>
 <body>           
-    
-    <form>   
-            <input type="text" placeholder=" Item Name...." name="action">   
-            <button type="submit">Search</button>
 
+    <div class='content'>
+        <div class="center">
             <button id="show-Login">Add Item</button>
-            <button type="opt">Remove Item</button> 
-    </form>
+            <button id="show-Login2">Remove Item</button>
+        </div>
+        
+        
+        <form>
+            <input type="text2" placeholder=" Item Name...." name="action">   
+            <button class="search">Search</button>
+        </form>
+    </div>
+    
 
     <div class="popup">
             <div class="close-btn">&times;</div>
             <div class="form">
-                <h2>Log in</h2>
+                <h2>Add Item</h2>
                 <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Enter email">
+                    <label for="item">Item Name</label>
+                    <input type="text" id="item" placeholder="Enter item name">
                 </div>
                 <div class="form-element">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter password">
+                    <label for="cata">Category</label>
+                    <input type="password" id="cata" placeholder="Enter category">
                 </div>
                 <div class="form-element">
-                    <button>Sign in</button>
+                    <button>Submit</button>
                 </div>
             </div>
         </div>
 
+        <div class="popup2">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Remove Item</h2>
+                <div class="form-element">
+                    <label for="item">Item Name</label>
+                    <input type="text" id="item" placeholder="Enter item name">
+                </div>
+                <div class="form-element">
+                    <label for="cata">Category</label>
+                    <input type="password" id="cata" placeholder="Enter category">
+                </div>
+                <div class="form-element">
+                    <button>Confirm</button>
+                </div>
+            </div>
+        </div>
+
+<div class='content'>
     <div #data>
-            <p class="title">Inventory</p>
-            <table>
-                    <tr>
-                        <th>Category</th>
-                        <th>Number of Items</th>
-                    </tr>
-                    <tr>
-                        <td rowspan = "1">Hillary</td>
-                        <td>Advanced Web</td>
-                    </tr>
-                    <tr>
-                        <td>Operating System</td>
-                        <td>60</td>
-                    <tr>
-                        <td>Operating System</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td colspan="3">Total Average: 72.5</td>
-                    </tr>
-                    </table>
-    </div>
-    <footer>
-        <p>TAMU Hackathon 2022<br>
-        <p> Cubicool™<br>
-      </footer>
+        <p class="title">Inventory</p>
+        <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of Items</th>
+                </tr>
+                <tr>
+                    <td rowspan = "1">Hillary</td>
+                    <td>Advanced Web</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>60</td>
+                <tr>
+                    <td>Operating System</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">Total Average: 72.5</td>
+                </tr>
+                </table>
+</div>
+<footer>
+    <p>TAMU Hackathon 2022 Cubicool™<br>
+    <p> Cubicool™<br>
+  </footer>
+</div>
+   
 </body>
 </html>
 <script type="text/javascript" src="script.js">

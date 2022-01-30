@@ -5,21 +5,23 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Staatliches&display=swap');
     body{
         background-color: #181818;
         text-decoration-color: white;
         color:white;
-        font-family: 'Staatliches';
-        font-display: 'Staatliches';
-    }
-    @font-face{
+        margin:1in;
+        padding-top: .75in;
 
+        font-family: 'Bungee', cursive;
+    }
+    header{
+        font-size: 50px;
     }
     #logo{
        padding-top: none;
     }
     p{
-        padding-top:1in;
         text-align: center;
     }
     .capacity{
@@ -45,7 +47,10 @@
         height:.4in;
         border-radius: 3em;
         border: none;
-        background-color: gray;
+        background-color: rgb(70, 70, 70);
+        font-family: "Railway",sans-serif;
+        font-weight: bold;
+        color: #EDC528;
     }
     .button:hover{
         background-color:rgb(56, 56, 56);
@@ -67,14 +72,14 @@
         <p>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p>
     </marquee> -->
 
-    <p>
-            WELCOME TO CUBICOOL
-    </p>
 
     <div id = logo style="text-align: center;">
         <p class="aligncenter">
             <img src="./CC-Logo-01.png" alt="TAMU" width = 350em height 350em>
         </p>
+        <header>
+            WELCOME TO CUBICOOL
+        </header>
     </div
     
    
@@ -82,17 +87,17 @@
     <script src="container.py"></script>
 
     <p class="button_change" style:"text-align=center;" >
-           <a href="display.html"><button class="button" onclick="get_category.container">Menu</button></a> 
+           <a href="display.html"><button class="button" onclick="get_category.container">MENU</button></a> 
     </p>
     
 
-    <!-- change value with math @ value /////////////////////////////////// -->   
+    <!-- change value with math @ value /////////////////////////////////
     <div>
         <p class= "pls">
             <progress class="capacity" value="70" max="100" >80% </progress>
         </p>
         
-    </div>
+    </div> -->   
 
 </body>
 </html>
