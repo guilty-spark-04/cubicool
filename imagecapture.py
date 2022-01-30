@@ -39,8 +39,12 @@ def localize_objects(path):
         for vertex in object_.bounding_poly.normalized_vertices:
             print(' - ({}, {})'.format(vertex.x, vertex.y))
 
-imagecapture()
-localize_objects(r"./opencv_frame_0.png")
 
 
     
+def detect_object():
+    imagecapture()
+    time.sleep(0.5)
+    localize_objects(r"./opencv_frame_0.png")
+    #return it here
+

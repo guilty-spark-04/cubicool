@@ -11,3 +11,7 @@ document.querySelector("#show-login2").addEventListener("click",function(){
 document.querySelector(".popup2 .close-btn").addEventListener("click",function(){
     document.querySelector(".popup2").classList.remove("active");
 });
+
+function myFunction(data) {
+    alert(data);
+  }

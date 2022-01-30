@@ -1,6 +1,7 @@
 #this will be where the server is hosted. All other python scripts will be imported to this one.
 from container import Container
 from box_functions import *
+from imagecapture import detect_object
 from flask import Flask, render_template, request
 app = Flask(__name__)
 box = create_box()

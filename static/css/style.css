@@ -67,25 +67,29 @@ body{
      text-align: center;
  }
  input[type="text2"]{
-     height:.6in
-     display:block;
-     padding:.1in;
-     margin-top:5px;
-     background-color:black;
-     opacity: 0.7;
-     border-radius: 5px;
-     font-weight:600;
+    color:white;
+    height:.4in;
+    display:block;
+    position:absolute;
+    padding:10px 20px;
+    background-color:black;
+    opacity: 0.7;
+    border-radius: 5px;
+    font-weight:600;
+    left: 14.2in;
  }
  .search{
+     position:absolute;
      color:black;
      background-color:#D0BB6C;
-     padding:10px 20px;
     font-size:15px;
     font-weight:600;
     border:none;
     outline:none;
     cursor:pointer;
     border-radius: 5px;
+    left:16.5in;
+    padding:10px 20px;
  }
  .search:hover{
      opacity:.8;
@@ -111,8 +115,8 @@ body{
 }
 .center{
     position:absolute;
-    top:1.59in;
-    left:9in;
+    top:1.56in;
+    left:12.78in;
     transform:translate(-50%,-50%)
 }
 .center button{

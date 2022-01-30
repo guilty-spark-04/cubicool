@@ -25,6 +25,7 @@ class Container:
                 self.category = "unused"
                 self.status = "empty"
                 Container.capacity+=1
+        #turn on led(self.container_location)
         return
 
     def get_category(self): #gets the category of the container
