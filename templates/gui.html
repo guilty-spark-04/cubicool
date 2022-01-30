@@ -75,7 +75,7 @@
 
     <div id = logo style="text-align: center;">
         <p class="aligncenter">
-            <img src="./CC-Logo-01.png" alt="TAMU" width = 350em height 350em>
+            <img src="./static/CC-Logo-01.png" alt="TAMU" width = 350em height 350em>
         </p>
         <header>
             WELCOME TO CUBICOOL
@@ -84,10 +84,10 @@
     
    
     <!-- JavaScript Goes Here --> 
-    <script src="container.py"></script>
+    <!-- <script src="../container.py"></script> -->
 
     <p class="button_change" style:"text-align=center;" >
-           <a href="display.html"><button class="button" onclick="get_category.container">MENU</button></a> 
+           <a href="{{ url_for('home') }}"><button class="button" onclick="get_category.container">MENU</button></a> 
     </p>
     
 

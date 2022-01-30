@@ -3,7 +3,7 @@ class Container:
     def __init__(self,location):
         self.container_location = location
         self.status = "empty"
-        self.category = ""
+        self.category = "unused"
         self.num_items = 0
         self.items = { }
 
@@ -22,7 +22,7 @@ class Container:
             self.num_items-=1
             del self.items[item]
             if self.num_items == 0:
-                self.category = ""
+                self.category = "unused"
                 self.status = "empty"
                 Container.capacity+=1
         return
