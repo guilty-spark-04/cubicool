@@ -21,7 +21,6 @@ def home():
             category = request.form['cata']
             add_item(box,item,category)
         elif request.form['checker'] == 'remove':
-            print("removing")
             item = request.form['item']
             remove_item(box,item)
         return render_template("gui.html")
