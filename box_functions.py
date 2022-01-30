@@ -1,6 +1,7 @@
 from unicodedata import category
 from container import Container
 
+
 def create_box():
     box = []
     for i in range(16):

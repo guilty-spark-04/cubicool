@@ -1,3 +1,5 @@
+from motorcontrol import *
+import time
 class Container:
     capacity = 16
     def __init__(self,location):
@@ -8,6 +10,8 @@ class Container:
         self.items = { }
 
     def add_item(self, item, category):
+        led_on(self.container_location)
+        motor_control(self.container_location)
         if item in self.items: #if the item exists, just increase the item_count value
             self.items[item] += 1
         else:
@@ -15,9 +19,13 @@ class Container:
             self.category = category
         self.num_items+=1
         self.status = "used"
+        time.sleep(5)
+        led_off(self.container_location)
         return
 
     def remove_item(self,item): #removes item from container
+        led_on(self.container_location)
+        motor_control(self.container_location)
         if(item in self.items):
             self.num_items-=1
             del self.items[item]
@@ -26,6 +34,8 @@ class Container:
                 self.status = "empty"
                 Container.capacity+=1
         #turn on led(self.container_location)
+        time.sleep(5)
+        led_off(self.container_location)
         return
 
     def get_category(self): #gets the category of the container

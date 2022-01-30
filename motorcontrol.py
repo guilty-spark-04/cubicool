@@ -2,8 +2,7 @@ import board
 import digitalio
 import serial
 import time
-print("serial conect")
-#ser = serial.Serial('/dev/ttyUSB0', 115200)
+ser = serial.Serial('/dev/ttyUSB0', 115200)
 led1 = digitalio.DigitalInOut(board.P8_3)
 led2 = digitalio.DigitalInOut(board.P8_4) 
 led3 = digitalio.DigitalInOut(board.P8_5) 
@@ -140,35 +139,35 @@ def led_off(num):
         led16.value = False
 
 
-# def motor_control(position):
+def motor_control(position):
     
-#     if(position == 1):
-#         time.sleep(2)
-#         print("rotating")
-#         ser.write(str.encode("G1 X0 F3000\r\n"))
-#         print("done")
-#         time.sleep(1)
+    if(position == 1):
+        time.sleep(2)
+        print("rotating")
+        ser.write(str.encode("G1 X0 F3000\r\n"))
+        print("done")
+        time.sleep(1)
         
-#     if(position == 2):
-#         time.sleep(2)
-#         print("rotating")
-#         ser.write(str.encode("G1 X10 F3000\r\n"))
-#         print("done")
-#         time.sleep(1)
+    if(position == 2):
+        time.sleep(2)
+        print("rotating")
+        ser.write(str.encode("G1 X10 F3000\r\n"))
+        print("done")
+        time.sleep(1)
         
-#     if(position == 3):
-#         time.sleep(2)
-#         print("rotating")
-#         ser.write(str.encode("G1 X20 F3000\r\n"))
-#         print("done")
-#         time.sleep(1)
+    if(position == 3):
+        time.sleep(2)
+        print("rotating")
+        ser.write(str.encode("G1 X20 F3000\r\n"))
+        print("done")
+        time.sleep(1)
         
-#     if(position == 4):
-#         time.sleep(2)
-#         print("rotating")
-#         ser.write(str.encode("G1 X30 F3000\r\n"))
-#         print("done")
-#         time.sleep(1)
+    if(position == 4):
+        time.sleep(2)
+        print("rotating")
+        ser.write(str.encode("G1 X30 F3000\r\n"))
+        print("done")
+        time.sleep(1)
         
 
-# ser.close()
+ser.close()
