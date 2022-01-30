@@ -1,19 +1,18 @@
 class Container:
-    def __init__(self,category,num_items,item,location):
+    capacity = 16
+    def __init__(self,location):
         self.container_location = location
         self.status = "empty"
-        self.category = category
-        self.num_items = num_items
-        self.items = {
-            "item_name" : item,
-            "item_count": 0
-        }
+        self.category = ""
+        self.num_items = 0
+        self.items = { }
 
-    def add_item(self, item):
+    def add_item(self, item, category):
         if item in self.items: #if the item exists, just increase the item_count value
             self.items[item] += 1
         else:
             self.items[item] = 1 #else we add it to the collection
+            self.category = category
         self.num_items+=1
         self.status = "used"
         return
@@ -22,6 +21,8 @@ class Container:
         if(item in self.items):
             self.num_items-=1
             self.items.remove(item);
+            if self.num_items == 0:
+                self.status = "empty"
         return
 
     def get_category(self): #gets the category of the container
@@ -38,4 +39,7 @@ class Container:
             return True;
         else:
             return False;
+    def get_status(self):
+        return self.status
+
 
