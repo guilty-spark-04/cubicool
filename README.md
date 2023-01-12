@@ -26,4 +26,6 @@ Since our team had two members new to TAMUhack, they got to try out how to use G
 
 ## Result
 Thanks to the efforts of the entire team, our project was able to win the best hardware hack category of the competition. We placed 5th overall for general prizes of the entire competition. 
+
 ![ontrol_page](image/certificate.png)
+*Certificate award for best hardware hack*
